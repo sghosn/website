@@ -1,0 +1,22 @@
+/* Rectangle 2 */
+
+.columnStable {
+position: absolute;
+width: 910px;
+height: 2257px;
+left: 533px;
+top: 0px;
+
+background: #FFFFFF;
+}
+
+.columnDynamic {
+/* Rectangle 1 */
+position: absolute;
+width: 533px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #C4C4C4;
+    }
