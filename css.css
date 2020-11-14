@@ -3,7 +3,7 @@
 .columnDynamic {
 position: absolute;
 display: grid;
-width: auto;
+width: calc(100% - 533px);
 height: 2257px;
 left: 533px;
 top: 0px;
