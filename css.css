@@ -9,7 +9,7 @@ left: 533px;
 top: 0px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr;
-background: #FFFFFF;
+background: deepskyblue;
 grid-gap: 10px 10px; 
 }
 
