@@ -1,6 +1,6 @@
 /* Rectangle 2 */
 
-.columnStable {
+.columnDynamic {
 position: absolute;
 width: 910px;
 height: 2257px;
@@ -21,16 +21,17 @@ top: 0px;
 background: #C4C4C4;
     }
 
-.columnDynamic {
-/*    display: grid;
+/*.columnDynamic {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 2fr));
-*/    position: absolute;
+   position: absolute;
     width: 910px;
-    height: 2257px;
+  height: 2257px;
     left: 530px;
     top: 0px;
+    background: #C4C4C4;
 }
-/*
+
 .wrapper > * {
     padding: 10px 20px;
     background: #C4C4C4;
