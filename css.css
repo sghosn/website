@@ -5,5 +5,29 @@
 
 .secondcolumn {
     height:100vh;
+    background-color: #F1EBEA;
+}
+
+
+  .column {
+    padding: 5px;
+  }
+
+
+  .Questions {
+    text-align: center;
+
+  }
+  #React {
+      margin-left: -10px;
+    margin-right:-23px;
+  }
+
+.card{
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+.card-title{
+    margin-top:-10px;
 
 }
