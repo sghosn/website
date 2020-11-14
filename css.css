@@ -22,16 +22,17 @@ background: #C4C4C4;
     }
 
 .columnDynamic {
-    display: grid;
-    position: absolute;
+/*    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 2fr));
-    width: 360px;
+*/    width: 360px;
+    position: absolute;
     height: 431px;
     left: 592px;
     top: 63px
 }
-
+/*
 .wrapper > * {
     padding: 10px 20px;
     background: #C4C4C4;
 }
+*/
