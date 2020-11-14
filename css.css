@@ -20,3 +20,10 @@ top: 0px;
 
 background: #C4C4C4;
     }
+
+.columnStable {
+    display: grid;
+    grid-gap: 50px 100px;
+    background: #C4C4C4; 
+}
+      
