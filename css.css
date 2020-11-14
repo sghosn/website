@@ -3,7 +3,7 @@
 .columnDynamic {
 position: absolute;
 display: grid;
-width: calc(100% - 533px);
+width: 67%;
 height: 2257px;
 left: 533px;
 top: 0px;
@@ -13,7 +13,7 @@ background: skyblue;
 .columnStable {
 /* Rectangle 1 */
 position: fixed;
-width: 533px;
+width: 33%;
 height: 1024px;
 left: 0px;
 top: 0px;
