@@ -3,18 +3,11 @@
 .columnDynamic {
 position: absolute;
 display: grid;
-width: 910px;
+width: auto;
 height: 2257px;
 left: 533px;
 top: 0px;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr;
-grid-gap: 10px 10px; 
-}
-
-.Projects {
-    background: deepskyblue;
-    padding: 4rem;
+background: skyblue;
 }
 
 .columnStable {
