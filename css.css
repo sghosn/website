@@ -10,7 +10,7 @@ top: 0px;
 background: #FFFFFF;
 }
 
-.columnDynamic {
+.columnStable {
 /* Rectangle 1 */
 position: fixed;
 width: 533px;
@@ -21,9 +21,17 @@ top: 0px;
 background: #C4C4C4;
     }
 
-.columnStable {
+.columnDynamic {
     display: grid;
-    grid-gap: 50px 100px;
-    background: #C4C4C4; 
+    position: absolute;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 2fr));
+    width: 360px;
+    height: 431px;
+    left: 592px;
+    top: 63px
 }
-      
+
+.wrapper > * {
+    padding: 10px 20px;
+    background: #C4C4C4;
+}
