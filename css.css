@@ -2,12 +2,20 @@
 
 .columnDynamic {
 position: absolute;
+display: grid;
 width: 910px;
 height: 2257px;
 left: 533px;
 top: 0px;
-
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
 background: #FFFFFF;
+grid-gap: 10px 10px; 
+}
+
+.projects {
+    background: deepskyblue;
+    padding: 4rem;
 }
 
 .columnStable {
@@ -18,7 +26,6 @@ height: 1024px;
 left: 0px;
 top: 0px;
 
-background: #C4C4C4;
     }
 
 /*.columnDynamic {
