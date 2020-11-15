@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="css.css" rel="stylesheet">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <h1> COVID-19 Visualization</h1>
+    <p>During the beginning of the pandemic, New York City was hit extremely hard by COVID-19. This is a visualization I conducted during its April peak in NYC.</p>
+    <div class = "container">
+    <div class="row justify-content-md-center" id = "test">
+        <div class="col">
+            <img id="myimage" src="covid191.png" width="300" height="300" alt="Girl">
+            <p>Test</p>
+        </div>
+        <div class="col">
+            <div id="myresult" class="img-zoom-result"></div>
+            <p>Test</p>
+            <script>
+                imageZoom("myimage", "myresult");
+            </script>
+        </div>
+    </div>
+</div>
+<!--
+    <div class="row">
+        <div class="col text-center">
+            <img class="img-responsive" id= "myimage1" src="covid192.png"  width="620" height="500">
+        </div>
+    </div>
+    <p> This is a test. </p>
+    <div class="row">
+        <div class="col text-center">
+            <img class="img-responsive" id= "myimage2" src="covid193.png"  width="620" height="500">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <img class="img-responsive" id= "myimage2" src="covid194.png"  width="620" height="500">
+        </div>
+    </div>
+      -->
+</body>
