@@ -13,23 +13,97 @@
     <script src="myscript.js"></script>
 </head>
 <body>
-    <h1> COVID-19 Visualization</h1>
-    <p>During the beginning of the pandemic, New York City was hit extremely hard by COVID-19. This is a visualization I conducted during its April peak in NYC.</p>
-    <div class = "container">
+    <div class = "container-fluid" style="max-width:900px">
+        <nav class ="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class = "container-fluid">
+                <a class ="navbar-brand" href="#"> <h2 class = "display-5 bold"> <strong> Samah Ghosn </strong></h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class ="navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class ="nav-item active"> 
+                            <a class="nav-link" href="https://sghosn.github.io/website/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-5 bold"><strong>COVID-19 Visualization</strong> </h1>
+            <p class="lead">During the beginning of the pandemic, New York City was hit extremely hard by COVID-19. This is a visualization I conducted during its April peak in NYC.</p>
+            <hr class="my-4">
+            <p style="color:#29648A"> Python </p>
+        </div>
+   <div class = "container">
     <div class="row justify-content-md-center" id = "test">
-        <div class="col">
-            <img id="myimage" src="covid191.png" width="300" height="300" alt="Girl">
-            <p>Test</p>
+            <div class="col">
+                <figure class="europeMap rounded p-3 bg-white shadow-sm" id = "NYMap"> 
+                    <img id="myimage" src="covid191.png" width ="500" height="400" alt="" class="card-img-top" >
+                    <figcaption class="p-4 card-img-bottom">
+                        <h2 class="h5 font-weight-bold mb-2 font-italic">Percent Positive by Zip Code</h2>
+                        <p class="mb-0 text-small">This chart shows positivity rates by zipcodes in the New York City region.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class=" rounded p-3 bg-white shadow-sm" id = "NYMAP2"> 
+                <div id="myresult" class="img-zoom-result"></div>
+                <p>You can zoom in to the specific zip codes.</p>
+                <script>
+                    imageZoom("myimage", "myresult");
+                </script>
+                </figure>
+            </div>
         </div>
-        <div class="col">
-            <div id="myresult" class="img-zoom-result"></div>
-            <p>Test</p>
-            <script>
-                imageZoom("myimage", "myresult");
-            </script>
+        <div class = "Why-section">
+            <h1> Why implement? </h1>    
+            <p> These type of visualizations are vital in helping health experts determine hot spots.</p>
         </div>
+        <div class = "Implement-section">
+            <h1> Implementation </h1>   
+            <p> This project used Python and Python libraries to visualize information in regards to COVID. </p> 
+        </div>
+    <div class="row justify-content-md-center" id = "test">
+        <figure class=" rounded p-3 bg-white shadow-sm" id = "NYMAP21"> 
+            <img id="myimage" src="covid192.png" width="400" height="500" class="card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+                <h2 class="h5 font-weight-bold mb-2 font-italic">Cumulative</h2>
+                <p class="mb-0 text-small">This graph shows new and cumulative hospitalized, total case, and death counts.</p>
+            </figcaption>
+        </figure>
+        <!--
+        <p></p> --> 
     </div>
-</div>
+    <div class="row justify-content-md-center" id = "test">
+        <figure class=" rounded p-3 bg-white shadow-sm" id = "NYMAP3"> 
+            <img id="myimage" src="covid193.png" width="600" height="400" class="card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+                <h2 class="h5 font-weight-bold mb-2 font-italic">By Age</h2>
+                <p class="mb-0 text-small">This bar graph shows the differences in death, hospitalization, and covid counts by age group.</p>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="row justify-content-md-center" id = "test">
+        <figure class=" rounded p-3 bg-white shadow-sm" id = "NYMAP4"> 
+            <img id="myimage" src="covid194.png" width="600" height="400" class="card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+                <h2 class="h5 font-weight-bold mb-2 font-italic">By Gender</h2>
+                <p class="mb-0 text-small">This bar graph shows the differences in death, hospitalization, and covid counts by gender.</p>
+            </figcaption>
+        </figure>
+
+    </div>
+    <div class="row justify-content-md-center" id = "test2">
+        <figure class=" rounded p-3 bg-white shadow-sm" id = "NYMAP5"> 
+            <img id="myimage" src="covid195.png" width="400" height="500"  class="card-img-top">
+            <figcaption class="p-4 card-img-bottom">
+                <h2 class="h5 font-weight-bold mb-2 font-italic">By Borough</h2>
+                <p class="mb-0 text-small">This map shows covid case counts by borough.</p>
+            </figcaption>
+        </figure>
+    </div>
+    </div>
 <!--
     <div class="row">
         <div class="col text-center">
@@ -49,4 +123,5 @@
         </div>
     </div>
       -->
+    </div>
 </body>
