@@ -5,6 +5,8 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <title>Florida early voting statistics</title>
   
   <link href="./map-style.css"  rel="stylesheet" type="text/css"/>
@@ -711,6 +713,28 @@
   </script>
 </head>
 <body>
+	<div class = "container-fluid" >
+        <nav class ="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class = "container-fluid">
+                <a class ="navbar-brand" href="#"> <h2 class = "display-5 bold"> <strong> Samah Ghosn </strong></h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class ="navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class ="nav-item active"> 
+                            <a class="nav-link" href="https://sghosn.github.io/website/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-5 bold"><strong>COVID-19 Visualization</strong> </h1>
+            <p class="lead">During the beginning of the pandemic, New York City was hit extremely hard by COVID-19. This is a visualization I conducted during its April peak in NYC.</p>
+            <hr class="my-4">
+            <p style="color:#29648A"> Python </p>
+        </div>
   <h1>Florida early voting statistics</h1>  
   
   <span style="background-color:#faffc4;"><b>Defaults to All Votes view.</b></span> Scroll down to toggle other views.<br />
@@ -894,7 +918,7 @@
 	<button onclick="methodType='total';turnoutType='early2016DEM';partyType='DEM';doUpdate();">Compare 2020 Democrat votes vs. 2016 Democrat EV</button> - See where Democrats are turning out vs 2016.<br />
 	<button onclick="methodType='total';turnoutType='early2016REP';partyType='REP';doUpdate();">Compare 2020 Republican votes vs. 2016 Republican EV</button> - See where Republicans are turning out vs. 2016.<br />
 	<button onclick="methodType='total';turnoutType='early2016NPA';partyType='NPA';doUpdate();">Compare 2020 unaffliated votes vs. 2016 unaffliated EV</button> - See where Independents are turning out vs. 2016.<br />
-	<button onclick="methodType='total';turnoutType='early2016TOTAL';partyType='TOTAL';doUpdate();">Compare all 2020 votes vs. 2016 votes</button> - See where turnout is happening vs. 2016.<br /></small>
+	<button onclick="methodType='total';turnoutType='early2016TOTAL';partyType='TOTAL';doUpdate();">Compare all 2020 votes vs. 2016 votes</button> - See where turnout is happening vs. 2016.<br />
 	<br /><br />
 
 	<button onclick="methodType='total';turnoutType='reg2020DEM';partyType='DEM';doUpdate();">Compare 2020 Democrat early votes vs. Democrat active registrations</button> - See where Democrats are turning out vs 2016.<br />
@@ -904,15 +928,15 @@
 	<br /><br />
 
 <b>Advanced</b><br />
-  <small>Filter by vote type:</small> <select id="methodFilter">
+  <small>Filter by vote type: <select id="methodFilter">
 	<option value="total" selected="selected">All votes</option>
 	<option value="ElectionDay">Election Day votes only</option>
 	<option value="EarlyVoting">In-person early voting only</option>
 	<option value="Mail">Mail in votes only</option>
-  </select>	
+  </select>	</small>
   <br />
   
-  <small>Denominator:</small> <select id="turnoutFilter">
+  <small>Denominator: <select id="turnoutFilter">
 	<option value="reg2020TOTAL">Total voter registrations</option>
 	<option value="reg2020DEM">Democrat voter registrations</option>
 	<option value="reg2020REP">Republican voter registrations</option>
@@ -928,18 +952,16 @@
 	<option value="allEarly">All party early votes</option>	
 	<option value="splitAdvantage">Advantage split (ignores party)</option>	
 	<option value="split" selected="selected">R/D split (ignores party)</option>
-  </select>
+  </select> </small>
   <br/>
   
-  <small>Filter by party:</small> <select id="partyFilter">
+  <small>Filter by party: <select id="partyFilter">
 	<option value="NPA">NPA (unaffliated)</option>
 	<option value="REP">Republican</option>
 	<option value="DEM">Democrat</option>	
 	<option value="TOTAL" selected="selected">All parties</option>
-  </select>
-  <br />
-<div id="dataTable"></div>
-<a href="https://sghosn.github.io/website/">Back to main website</a>
-
+  </select> </small>
+  <br /> 
+</div>
 </body>
 </html>
