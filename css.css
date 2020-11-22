@@ -1,10 +1,8 @@
 .firstcolumn {
-    height:100vh;
     background-color: #C4C4C4; 
 }
 
 .secondcolumn {
-    height:100vh;
     background-color: #F1EBEA;
 }
 
@@ -30,4 +28,10 @@
 .card-title{
     margin-top:-10px;
 
+}
+
+
+
+.card .card-img-top {
+height: 400px;
 }
