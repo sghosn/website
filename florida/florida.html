@@ -645,7 +645,7 @@
 		$('#timestamp').text(liveData['TIMESTAMP']);
 		$.getJSON("florida2016_reg.json", function(data2016) {
 			election2016Data = data2016;
-			$.getJSON("florida2016_reg.json", function(early2016) {
+			$.getJSON("early2016_revised.json", function(early2016) {
 				early2016Data = early2016;
 				$.each( usfljsconfig, function( key, value ) {
 				  if (!key || !value || !(value.hover)) {
