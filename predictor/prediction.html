@@ -20,7 +20,7 @@
 		  background: red;
 		  color: white;
 		  padding: 4px 12px;
-		  position: absolute;
+		  position: relative;
 		  border-radius: 4px;
 		  left: 50%;
 		  transform: translateX(-50%);
@@ -140,7 +140,7 @@
 	  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
 	}
 	
-	
+
 	// e.g., calculateMultiplier(stateData['IN'], 'femalePct', 1.10, true)
 	// to increase turnout of women by 10% for Trump
 	// Returns the differential to apply
