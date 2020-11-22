@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <title>map</title>
   <link href="./map-style.css"  rel="stylesheet" type="text/css"/>
   <style>
@@ -341,8 +343,8 @@
 		$('#numerator').html(htmlOptions);
 		$('#denominator').html(htmlOptions);
 
-		$("#numerator option[value='ballots_cast_trump_2020']").prop('selected', true);
-		$("#denominator option[value='num_votes_for_trump_2016']").prop('selected', true);
+		$("#numerator option[value='ballots_cast_biden_2020']").prop('selected', true);
+		$("#denominator option[value='pres_ballots_cast_total_2020']").prop('selected', true);
 		
 		$("#numerator").change(function () {
 			doUpdate();
