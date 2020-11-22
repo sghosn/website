@@ -640,12 +640,12 @@
 	}
 	
 	$(document).ready(function() {	  
-		$.getJSON('https://raw.githubusercontent.com/sghosn/website/master/florida/florida.json?token=AO7GGDJYMBILT3IGLWNOLJK7XGNZ2', function(data) {
+		$.getJSON("florida.json", function(data) {
 	  liveData = data;
 		$('#timestamp').text(liveData['TIMESTAMP']);
-		$.getJSON('https://raw.githubusercontent.com/sghosn/website/master/florida/florida2016_reg.json?token=AO7GGDL4F2HQALQ74FT4ANC7XGOEA', function(data2016) {
+		$.getJSON("florida2016_reg.json", function(data2016) {
 			election2016Data = data2016;
-			$.getJSON('https://raw.githubusercontent.com/sghosn/website/master/florida/early2016_revised.json?token=AO7GGDMIYDMJENZZOOLN3PK7XGOFI', function(early2016) {
+			$.getJSON("florida2016_reg.json", function(early2016) {
 				early2016Data = early2016;
 				$.each( usfljsconfig, function( key, value ) {
 				  if (!key || !value || !(value.hover)) {
