@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+
   <title>map</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link href="./map-style.css"  rel="stylesheet" type="text/css"/>
   <script src="./jquery.min.js"></script>
   <script src="./map-config.js"></script>
@@ -235,7 +238,29 @@
   </script>
   
 </head>
-<body>
+<body style="background-color: #e4e4e4">
+	<div class = "container-fluid" style="max-width:900px">
+		<nav class ="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class = "container-fluid">
+				<a class ="navbar-brand" href="#"> <h2 class = "display-5 bold"> <strong> Samah Ghosn </strong></h2></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class ="navbar-toggler-icon"></span>
+				</button>
+				<div class ="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class ="nav-item active"> 
+							<a class="nav-link" href="https://sghosn.github.io/website/">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron" style="border: 1px solid black;">
+			<h1 class="display-5 bold"><strong>Swing State Result compiler and comparison</strong> </h1>
+			<p class="lead">Different websites compile and upload results at different times. If you're trying to retrieve real time info, you want the fastest website. This compiles and compares website.</p>
+			<hr class="my-4">
+			<p style="color:#29648A"> HTML, CSS, Python: Flask, Javascript: Jquery </p>
+		</div>	
 <span id="uswijstip"></span>
 <div id="mapwrapper">
   <div id="mapbase"><!-- V4.1 -->
@@ -400,6 +425,6 @@
 <select id="denominator">
 </select> - Denominator (Select "none" to forego)
 
-
+</div>
 </body>
 </html>
