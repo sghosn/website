@@ -119,9 +119,11 @@ body {
   }
  }
 
- @media(max-width: 992px) {
-    .firstcolumn {
-      height: 1050px;
-    }
 
- }
+
+ @media(max-width: 992px) {
+  .firstcolumn {
+    height: 100%;
+  }
+
+}
