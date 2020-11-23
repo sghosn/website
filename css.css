@@ -1,0 +1,129 @@
+.firstcolumn {
+    background-color: #C4C4C4; 
+}
+
+.secondcolumn {
+    background-color: #F1EBEA;
+}
+
+
+  .column {
+    padding: 5px;
+  }
+
+
+  .Questions {
+    text-align: center;
+
+  }
+
+
+.card{
+    margin-top: 5px;
+    margin-bottom:10px;
+}
+.card-title{
+    margin-top:-10px;
+
+
+}
+.card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.carousel-item .d-block {
+  width: 350px;
+  height: 350px;
+}
+
+.card-img-top {
+
+  border-radius:8px;
+}
+
+.footer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.panel-footer {
+  height: 50px;
+}
+.captions {
+  margin-top: 10px;
+}
+
+body {
+  font-weight: 320 !important;
+}
+
+.bio {
+  font-weight: 400 !important;
+
+}
+
+.Questions {
+  padding-top: 15px;
+
+}
+.my-icon {
+  box-shadow: 2px 2px #aaa9a9;
+  border-radius: 10px;
+}
+
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext, tooltip1:active .tooltiptext {
+  visibility: visible;
+}
+
+
+.firstcolumn {
+  height: 1400px;
+
+}
+@media (min-width: 992px) { 
+  .firstcolumn {
+    position: sticky;
+    top: 0;
+  }
+ }
+
+
+
+ @media(max-width: 992px) {
+  .firstcolumn {
+    height: 100%;
+  }
+
+}
