@@ -30,60 +30,34 @@
         </div>
     </nav>
     <div class="jumbotron" style="border: 1px solid black;">
-        <h1 class="display-5 bold"><strong>Swing State Result compiler and comparison</strong> </h1>
-        <p class="lead">Different websites compile and upload results at different times. If you're trying to retrieve real time info, you want the fastest website. This compiles and compares website.</p>
+        <h1 class="display-5 bold"><strong>Discord Bot and Scraper</strong> </h1>
+        <p class="lead">Discord is a popular chatting feature similar to Skype or IRC. This bot utilizes a mixture of csv files and scraping methods to collect information and then display it through the Discord API once called by a specific user. </p>
         <hr class="my-4">
-        <p style="color:#29648A"> HTML, CSS, Python: Flask, Javascript: Jquery </p>
+        <p style="color:#29648A"> Python: Utilizing frameworks such as Flask and libraries such as Selenium and Pandas </p>
     </div>
-    <div class = "Why-section">
-        <h1> Why implement? </h1>    
-        <p> There are three different results aggregators. DecisionDeskHQ, Edison, and the AP. They upload results and compile them at different times. On nights like election night, which are intensely busy, having a way of seeing which is fastest is crucial when you're attempting to find which source is most accurate and fast.</p>
-    </div>
-    <div class = "Implement-section">
-        <h1> Implementation </h1>   
-        <p> This project used jQuery to obtain the information and then Flask, JavaScript, CSS, and HTML to display the information dynamically. </p> 
-    </div>
-    <div class = "container">
-        <div class="row justify-content-md-center" id = "test">
-            <figure class=" rounded p-3 bg-white shadow-sm" > 
-                <img src="png1.png" width ="300" height="300" alt="" class="card-img-top">
-                <figcaption class="p-4 card-img-bottom">
-                    <h2 class="h5 font-weight-bold mb-2 font-italic">Selection</h2>
-                    <p class="mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+    <div class = "container" style="max-width:500px;">
+        <div class="row justify-content-md-center sm-12" id = "test" >
+            <figure class=" rounded p-3 bg-white shadow-sm justify-content-md-center " style="max-width:700px;" > 
+                <img src="png2.png"  alt=""  class="card-img-top">
+                <figcaption class="p-4 card-img-bottom"> 
+                    <h2 class="h5 font-weight-bold mb-2 font-italic">Congressional District display</h2>
+                    <p class="mb-0 text-small">This displays congressional districts with a myriad of information including Ethnicity, rate, the 2018 congressional result, 2018 house result, and others. It is called by users using .elec |congressional district| |cd| </p>
                 </figcaption>
             </figure>
             
             <!--
             <p></p> --> 
         </div>
-        <div class="row justify-content-md-center" id = "test">
-            <figure class=" rounded p-3 bg-white shadow-sm" > 
-                <img src="png2.png" width ="300" height="400" alt="" class="card-img-top">
+        <div class="row justify-content-md-center sm-12" id = "test">
+            <figure class=" rounded p-3 bg-white shadow-sm" style="max-width:700px;"> 
+                <img src="png1.png" alt="" class="card-img-top" >
                 <figcaption class="p-4 card-img-bottom">
-                    <h2 class="h5 font-weight-bold mb-2 font-italic">Post-selection</h2>
-                    <p class="mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    <h2 class="h5 font-weight-bold mb-2 font-italic">State Display</h2>
+                    <p class="mb-0 text-small">This displays states and information from 2016 along with information compiled by election prediction website FiveThirtyEight and pollster aggregator RealClearPolitics. It is called by users using .elec |state/state abbreviation| |prez| </p>
                 </figcaption>
             </figure>
         </div>
-        <div class="row justify-content-md-center" id = "test">
-            <figure class="rounded p-3 bg-white shadow-sm" > 
-                <img src="png3.png" width ="300" height="300" alt="" class="card-img-top">
-                <figcaption class="p-4 card-img-bottom">
-                    <h2 class="h5 font-weight-bold mb-2 font-italic">Results by county</h2>
-                    <p class="mb-0 text-small ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="row justify-content-md-center" id = "test2">
-            <figure class="rounded p-3 bg-white shadow-sm" > 
-                <img src="png4.png" width ="300" height="400" alt="" class="card-img-top">
-                <figcaption class="p-4 card-img-bottom">
-                    <h2 class="h5 font-weight-bold mb-2 font-italic">Complete page</h2>
-                    <p class="mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                </figcaption>
-            </figure>
-            
-        </div>
+        
         </div>
 <!--
     <div class="row">
